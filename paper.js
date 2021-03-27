@@ -11,7 +11,7 @@ constructor(x,y,r)
     this.y=y;
     this.r=r;
     this.image=loadImage("paper.png");
-    this.body=Bodies.circle(this.x,this.y,this.r,option)
+    this.body=Bodies.circle(this.x,this.y,(this.r-20)/2,option)
     World.add(world,this.body);
 
 }
